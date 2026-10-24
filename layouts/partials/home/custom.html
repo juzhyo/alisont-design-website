@@ -45,6 +45,9 @@
 </div>
 <style>
   #reviews iframe { max-width: 100% !important; width: 100% !important; }
+  /* JotForm renders this widget inline. Remove its opaque outer background
+     without changing the individual review cards or their controls. */
+  #reviews .jf-reviews-widget { background: transparent !important; }
 </style>
 <script>
   /* Lazy-load the Google Reviews widget: fetch JotForm's script when the
